@@ -1,0 +1,41 @@
+.about {
+	min-height: 507px;
+	background-color: #2e3b4e;
+	max-width: 100%;
+	
+	.flex-wrap {
+		color: white;
+		max-width: 50%;
+		flex: 1 0 auto;
+		margin: 20px auto 0;
+		padding-top: 30px;
+		padding-right: 30px;
+
+		@include media-query($on-laptop) {
+        padding-right: 0px;
+    }
+	    @include media-query($on-palm) {
+	        max-width: 90%;
+	    }
+
+
+	}
+}
+
+.about-wrapper {
+	margin: 0 auto;
+	display: flex;
+	@include media-query($on-palm) {
+        flex-direction: column;
+    }
+}
+
+
+
+.about-body {
+	font-weight: 300;
+}
+
+
+
+

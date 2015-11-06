@@ -1,0 +1,52 @@
+.pink {
+	min-height: 540px;
+	background: url(../img/pink.jpg) center no-repeat;
+    background-size: cover;
+	color: white;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.pink-wrap {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.pink-text {
+	margin: 20px 0 40px;
+	font-size: 20px;
+	@include media-query($on-palm) {
+        font-size: 16px;
+    }
+}
+
+.pink-header {
+	font-size: 40px;
+	font-weight: 100;
+	@include media-query($on-palm) {
+        font-size: 25px;
+    }
+}
+
+.white-btn {
+    font-size: 18px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 50px;
+    color: #d54c63;
+    font-weight: 600;
+    @include media-query($on-palm) {
+        font-size: 14px;
+    }
+}
+
+.white-btn:hover {
+    font-size: 18px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 50px;
+    color: #d54c63;
+}

@@ -1,0 +1,60 @@
+
+.hand {
+	display: flex;
+	min-height: 495px;
+		 @include media-query($on-laptop) {
+        flex-direction: column;
+    }
+	
+}
+.watch {
+	flex-direction: row-reverse 
+}
+
+
+
+.hand-image {
+	flex: 0 0 auto;
+	width: 40%;
+	max-height: 100%;
+	 @include media-query($on-laptop) {
+        visibility:hidden;
+        width: 0px;
+    }
+}
+
+.hand-wrap {
+	flex: 1 1 0%;
+	width: 60%;
+	margin: 97px 103px;
+	@include media-query($on-palm) {
+        font-size: 25px;
+        width: 90%;
+        margin: 10px 5px;
+        text-align: center;
+    }
+}
+
+
+.hand-header {
+	font-size: 15px;
+	font-weight: 800;
+	color: #3a4d60;
+	text-transform: uppercase;
+
+}
+
+
+.hand-text {
+	color: #3a4d60;
+	font-weight: 400;
+		@include media-query($on-palm) {
+        font-size: 16px;
+
+    }
+}
+
+.large {
+	font-size: 20px;
+
+}
